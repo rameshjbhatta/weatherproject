@@ -1,0 +1,86 @@
+/* style.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(202, 243, 243);
+  }
+  
+  .container {
+    text-align: center;
+    border: 2px solid #cccccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  /* styles.css */
+
+/* Success message */
+.messages .success {
+  color: #155724;
+  background-color: #20e74f;
+  border-color: #c3e6cb;
+}
+
+/* Error message */
+.messages .error {
+  color: #721c24;
+  background-color: #dde01d;
+  border-color: #f5c6cb;
+}
+
+/* Warning message */
+.messages .warning {
+  color: #db0c0c;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+/* Info message */
+.messages .info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}

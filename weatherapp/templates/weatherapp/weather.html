@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Information</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container"> 
+        {% if messages %}
+        <ul >
+            {% for message in messages %}
+               {{ message }}
+            {% endfor %}
+        </ul>
+    {% endif %}
+        <img src="{% static 'images/weather.jpg'%}">
+        {% if data %}
+        
+        <h2>Weather Information for {{ data.city|title }}</h2>
+        <p>Weather: {{ data.weather_condition }}</p>  <!-- Display weather condition -->
+        <p>Temperature: {{ data.temp }} °C</p>
+        <p>Humidity: {{ data.humidity }} %</p>
+        <p>Wind Speed: {{ data.wind }} km/h</p>
+       {% endif %}
+        <a href="{% url 'weather' %}">Back to Home</a>
+    </div>
+</body>
+</html>
